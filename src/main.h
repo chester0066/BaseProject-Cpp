@@ -3,5 +3,5 @@
 
 int addNumber(int a, int b);
 int getTriangleType(int a, int b, int c);
-
+int getDrawCount(int StoneCount);
 #endif // MAIN_H_INCLUDED

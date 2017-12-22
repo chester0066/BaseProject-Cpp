@@ -3,15 +3,23 @@
 
 #ifndef TEST
 int main() {
-    printf("Rule Breaker!!!\n");
-    printf("5 + 2 = %d\n", addNumber(5, 2));
-    printf("%d\n", getTriangleType(3, 4, 5));
+    int StoneCount;
+    printf("請輸入石頭數量:\n");
+    scanf("%d",&StoneCount);
+    printf("可以進行%d抽:",getDrawCount(StoneCount));
     return 0;
+
 }
 #endif // TEST
 
 int addNumber(int a, int b) {
     return a + b;
+}
+int getDrawCount(int StoneCount){
+return StoneCount/3;
+if(StoneCount<0) return 0;
+
+
 }
 
 int getTriangleType(int a, int b, int c) {

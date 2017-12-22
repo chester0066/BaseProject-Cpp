@@ -11,6 +11,11 @@ void testGetTriangleType() {
     assert(getTriangleType(3, 4, 8) ==-2);
 
 }
+void getDrawCount(){
+    assert(getDrawCount(-1)== 0);
+
+}
+
 
 int main() {
     assert(addNumber(5, 2) == 7);
